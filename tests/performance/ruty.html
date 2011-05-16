@@ -1,0 +1,6 @@
+<h1>{{ title|escape }}</h1>
+<ul>
+  {% for item in sequence %}
+    <li>{{ loop.index }} - {{ item|escape }}</li>
+  {% endfor %}
+</ul>

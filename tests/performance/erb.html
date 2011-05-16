@@ -1,0 +1,6 @@
+<h1><%= escape(context[:title]) %></h1>
+<ul>
+  <% context[:sequence].each_with_index do |index, item| %>
+    <li><%= index + 1 %> - <%= escape(item) %></li>
+  <% end %>
+</ul>
